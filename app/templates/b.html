@@ -12,9 +12,39 @@
 
 		<script src="{% static '/vendors/jquery/jquery-3.3.1.min.js' %}"></script>
 		<script src="{% static '/vendors/jquery-ui/jquery-ui.min.js' %}"></script>
-	</head>
+	
+    <style>
+      .master {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: #2ae;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: flex-start;
+      }
+      
+      .sub {
+        display: flex;
+        min-width: calc(20% - 2em);
+        background-color: #ff0;
+        height: 150px;
+        margin: 1em;
+      }
+    </style>
+  </head>
 	<body>
-		<!-- Your layout here -->
+		<div class="master">
+      <div class="sub"></div>
+      <div class="sub"></div>
+      <div class="sub"></div>
+      <div class="sub"></div>
+      <div class="sub"></div>
+      <div class="sub"></div>
+    </div>
 
 	</body>
 </html>
